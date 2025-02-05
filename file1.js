@@ -16,3 +16,22 @@ fs.appendFileSync("data1.txt", data + "\nappended some text");
 
 // renaming a file
 fs.renameSync("data1.txt", "data2.txt");
+
+// deleting a file
+// fs.unlinkSync("data2.txt");
+
+// checking if a file exists
+if (fs.existsSync("data2.txt")) {
+    console.log("data2.txt exists");
+} else {
+    console.log("data2.txt does not exist");
+}
+
+// checking if a file contains a specific string and replacing it
+if (data.match("Hello")) {
+    console.log("Hello is present in data.txt");
+    const changedData = data.replace("Hello", "Hi");
+    fs.writeFileSync("data.txt", changedData);
+} else {
+    console.log("Hello is not present in data.txt");
+}
