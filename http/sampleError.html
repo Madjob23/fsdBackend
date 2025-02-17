@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.box-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    max-width: 253px;
+    gap: 5px;
+}
+
+.title-error {
+    color: #1a1d1f;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+p.description-error {
+    color: #a7acb0;
+    font-size: 17px;
+}
+
+.go-home {
+  color: white;
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+svg.arrow-btn {
+  height: 24px;
+}
+
+.box-btn {
+  display: flex;
+  background-color: #1a1d1f;
+  height: 41px;
+  width: 131px;
+  border-radius: 100px;
+  padding: 0 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 2px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  gap: 50px;
+}
+
+.img-error {
+  width: 300px;
+  height: fit-content;
+}
+
+a {
+  color: #8552d7;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+@media screen and (max-width: 741px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .box-info {
+        align-items: center;
+    }
+
+    p.description-error {
+        text-align: center;
+    }
+
+    .img-error {
+        width: 223px;
+    }
+
+    p.description-error {
+        font-size: 15px;
+    }
+
+    .title-error {
+        font-size: 49px;
+    }
+
+    .box-btn {
+        height: 36px;
+        width: 128px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/ojsf930fawdj2q92jdq9j2dq29peuhdq82h8q2w/mixpn/main/404.png" alt="404 Error" class="img-error">
+        <div class="box-info">
+            <h2 class="title-error">Oops!</h2>
+            <p class="description-error">We couldn't find the page you were looking for</p>
+            
+            <a href="#" class="box-btn">
+                <svg class="arrow-btn" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M6 12L11 7M6 12L11 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <span class="go-home">Go home</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
